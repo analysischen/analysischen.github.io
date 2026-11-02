@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="keywords" content="SF999,999sf,超变态SF,新开超变态传奇,超级变态传奇手游,超变传奇sf,超变态传奇手游,新开超变态SF,999传奇,超变65535">
+<meta name="description" content="SF999(999SF)是专注服务999sf玩家的超变态SF发布网，每日更新新开超变态传奇、超级变态传奇手游信息，涵盖超变65535、单职业超变、散人打金等热门版本，以玩家为中心提供最新开服信息与攻略。">
+<title>SF999-以999sf玩家为中心的超变态SF与新开超变态传奇手游</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:"Microsoft YaHei",Arial,sans-serif;background:#8b0000 url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect fill="%23750000" width="100" height="100"/><path fill="%23800000" d="M0 0h50v50H0zm50 50h50v50H50z"/></svg>');color:#333;font-size:14px;line-height:1.6;}
+a{text-decoration:none;color:#fff;transition:all .3s;}
+a:hover{color:#ffd700;}
+.container{max-width:1200px;margin:0 auto;background:#fff;}
+/* 顶部广告 */
+#wd_ad_box{width:100%;background:#000;text-align:center;overflow:hidden;}
+#wd_ad_box iframe{display:block;margin:0 auto;}
+/* 导航栏 */
+.nav-bar{background:linear-gradient(180deg,#b8860b 0%,#8b6914 50%,#6b4f0e 100%);padding:0;box-shadow:0 3px 8px rgba(0,0,0,0.5);}
+.nav-top{display:flex;justify-content:space-between;align-items:center;padding:8px 20px;background:rgba(0,0,0,0.3);color:#eee;font-size:12px;}
+.nav-time{color:#ffd700;font-weight:bold;}
+.nav-main{display:flex;list-style:none;}
+.nav-main li{flex:1;text-align:center;}
+.nav-main li a{display:block;padding:15px 0;font-size:16px;font-weight:bold;border-right:1px solid rgba(0,0,0,0.2);}
+.nav-main li a:hover{background:rgba(0,0,0,0.2);color:#fff;}
+.nav-main li a.active{color:#ffd700;background:rgba(0,0,0,0.3);}
+/* 头部横幅 */
+.header-banner{position:relative;background:linear-gradient(135deg,#8b0000 0%,#c41e3a 50%,#ffd700 100%);padding:20px;text-align:center;overflow:hidden;}
+.header-banner::before{content:"";position:absolute;top:0;left:0;right:0;bottom:0;background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"><polygon fill="rgba(255,215,0,0.1)" points="30,0 60,30 30,60 0,30"/></svg>');}
+.logo{display:inline-block;padding:15px 40px;background:rgba(0,0,0,0.6);border:2px solid #ffd700;border-radius:8px;position:relative;z-index:1;}
+.logo h1{font-size:42px;color:#ffd700;text-shadow:2px 2px 4px #000,0 0 20px rgba(255,215,0,0.5);letter-spacing:3px;}
+.logo p{color:#fff;font-size:14px;margin-top:5px;}
+/* 滚动公告 */
+.notice-bar{background:#1a1a1a;padding:10px 20px;display:flex;align-items:center;border-bottom:2px solid #ffd700;}
+.notice-label{background:#ffd700;color:#8b0000;padding:3px 12px;font-weight:bold;border-radius:3px;margin-right:15px;white-space:nowrap;}
+.notice-scroll{flex:1;overflow:hidden;white-space:nowrap;}
+.notice-scroll span{display:inline-block;animation:scrollNotice 20s linear infinite;color:#fff;}
+@keyframes scrollNotice{0%{transform:translateX(100%);}100%{transform:translateX(-100%);}}
+/* 主体布局 */
+.main-wrap{display:flex;gap:15px;padding:15px;}
+.main-left{flex:1;}
+.main-right{width:280px;}
+/* 区块标题 */
+.section-title{background:linear-gradient(90deg,#8b0000 0%,#c41e3a 50%,#ffd700 100%);color:#fff;padding:10px 15px;font-size:18px;font-weight:bold;display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;border-left:5px solid #ffd700;}
+.section-title a{font-size:12px;font-weight:normal;}
+/* 焦点图 */
+.focus-banner{margin-bottom:20px;border:1px solid #ddd;border-radius:4px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+.focus-banner img{width:100%;height:320px;object-fit:cover;display:block;}
+.focus-info{padding:15px;background:linear-gradient(135deg,#8b0000,#c41e3a);}
+.focus-info h3{color:#ffd700;font-size:20px;margin-bottom:8px;}
+.focus-info p{color:#fff;font-size:13px;line-height:1.8;}
+.focus-tags{margin-top:10px;}
+.focus-tags span{display:inline-block;background:rgba(255,215,0,0.2);color:#ffd700;padding:3px 10px;margin-right:8px;border-radius:20px;font-size:12px;border:1px solid #ffd700;}
+/* 开服列表 */
+.server-list{margin-bottom:20px;}
+.server-table{width:100%;border-collapse:collapse;}
+.server-table th{background:#8b0000;color:#ffd700;padding:10px;font-weight:normal;text-align:center;}
+.server-table td{padding:12px 10px;text-align:center;border-bottom:1px solid #eee;}
+.server-table tr:hover{background:#fff5f5;}
+.server-name{font-weight:bold;color:#8b0000;font-size:15px;}
+.server-tag{display:inline-block;background:#ff4500;color:#fff;padding:2px 6px;border-radius:3px;font-size:11px;margin-left:5px;}
+.server-tag.new{background:#32cd32;}
+.server-btn{display:inline-block;background:linear-gradient(180deg,#ffd700,#b8860b);color:#8b0000;padding:6px 18px;border-radius:4px;font-weight:bold;}
+.server-btn:hover{background:linear-gradient(180deg,#ffed4a,#ffd700);color:#8b0000;transform:translateY(-1px);box-shadow:0 2px 8px rgba(255,215,0,0.5);}
+/* 资讯双栏 */
+.news-section{display:flex;gap:15px;margin-bottom:20px;}
+.news-box{flex:1;border:1px solid #ddd;border-radius:4px;overflow:hidden;}
+.news-header{background:#8b0000;padding:10px 15px;color:#ffd700;font-size:16px;font-weight:bold;border-bottom:2px solid #ffd700;}
+.news-list{padding:10px;}
+.news-item{display:flex;padding:8px 0;border-bottom:1px dashed #eee;align-items:center;}
+.news-item:last-child{border-bottom:none;}
+.news-num{width:22px;height:22px;background:#ccc;color:#fff;text-align:center;line-height:22px;border-radius:3px;margin-right:10px;font-size:12px;}
+.news-num.hot{background:#ff4500;}
+.news-num.new{background:#32cd32;}
+.news-item a{color:#333;font-size:13px;flex:1;}
+.news-item a:hover{color:#8b0000;}
+.news-date{color:#999;font-size:12px;margin-left:10px;}
+.news-top-item{display:flex;padding:10px;border-bottom:1px solid #eee;}
+.news-top-img{width:120px;height:80px;object-fit:cover;border-radius:4px;margin-right:12px;}
+.news-top-info{flex:1;}
+.news-top-info h4{color:#8b0000;font-size:15px;margin-bottom:8px;}
+.news-top-info p{color:#666;font-size:12px;line-height:1.6;}
+/* 版本推荐 */
+.version-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px;}
+.version-card{border:1px solid #ddd;border-radius:4px;overflow:hidden;transition:all .3s;}
+.version-card:hover{transform:translateY(-3px);box-shadow:0 5px 15px rgba(139,0,0,0.2);}
+.version-card img{width:100%;height:140px;object-fit:cover;}
+.version-card-body{padding:12px;}
+.version-card-body h4{color:#8b0000;font-size:15px;margin-bottom:8px;}
+.version-card-body p{color:#666;font-size:12px;line-height:1.6;margin-bottom:10px;}
+.version-btn{display:block;text-align:center;background:#8b0000;color:#ffd700;padding:6px;border-radius:3px;font-size:13px;}
+.version-btn:hover{background:#c41e3a;color:#fff;}
+/* 打金专区 */
+.gold-section{background:linear-gradient(135deg,#fff5f5,#fff);padding:15px;border:1px solid #ffcccc;border-radius:4px;margin-bottom:20px;}
+.gold-title{color:#8b0000;font-size:18px;font-weight:bold;margin-bottom:15px;text-align:center;}
+.gold-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+.gold-item{text-align:center;padding:15px;background:#fff;border:1px solid #ffcccc;border-radius:4px;}
+.gold-price{color:#ff4500;font-size:20px;font-weight:bold;margin:8px 0;}
+.gold-name{color:#8b0000;font-weight:bold;}
+.gold-desc{color:#666;font-size:12px;margin-top:5px;}
+/* 右侧边栏 */
+.sidebar-box{border:1px solid #ddd;border-radius:4px;margin-bottom:15px;overflow:hidden;}
+.sidebar-header{background:#8b0000;color:#ffd700;padding:10px 15px;font-weight:bold;border-bottom:2px solid #ffd700;}
+.sidebar-body{padding:12px;}
+.sidebar-ad img{width:100%;border-radius:4px;margin-bottom:10px;}
+.rank-list{list-style:none;}
+.rank-item{display:flex;padding:8px 0;border-bottom:1px dashed #eee;align-items:center;}
+.rank-item:last-child{border-bottom:none;}
+.rank-num{width:24px;height:24px;background:#ddd;color:#fff;text-align:center;line-height:24px;border-radius:50%;margin-right:10px;font-size:12px;font-weight:bold;}
+.rank-num.top1{background:linear-gradient(180deg,#ffd700,#b8860b);}
+.rank-num.top2{background:linear-gradient(180deg,#c0c0c0,#a0a0a0);}
+.rank-num.top3{background:linear-gradient(180deg,#cd7f32,#8b4513);}
+.rank-item a{color:#333;font-size:13px;flex:1;}
+.rank-item a:hover{color:#8b0000;}
+.rank-heat{color:#ff4500;font-size:12px;font-weight:bold;}
+/* 日历 */
+.calendar{width:100%;text-align:center;}
+.calendar-date{color:#8b0000;font-size:16px;font-weight:bold;margin-bottom:10px;}
+.calendar-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;}
+.calendar-day{padding:8px 3px;font-size:12px;background:#f5f5f5;border-radius:3px;}
+.calendar-day.today{background:#8b0000;color:#ffd700;font-weight:bold;}
+.calendar-day.has-server{background:#ffe4e1;color:#8b0000;font-weight:bold;}
+/* FAQ */
+.faq-item{margin-bottom:10px;}
+.faq-q{color:#8b0000;font-weight:bold;font-size:13px;margin-bottom:5px;}
+.faq-a{color:#666;font-size:12px;padding-left:15px;line-height:1.6;}
+/* 底部 */
+.footer{background:#1a1a1a;padding:25px 20px;text-align:center;color:#999;font-size:13px;line-height:2;}
+.footer-links{margin-bottom:15px;}
+.footer-links a{color:#ccc;margin:0 10px;}
+.footer-links a:hover{color:#ffd700;}
+.footer-keywords{margin-top:15px;padding-top:15px;border-top:1px solid #333;}
+.footer-keywords a{color:#ffd700;margin:0 8px;font-size:12px;}
+.footer-keywords a:hover{text-decoration:underline;}
+.copyright{margin-top:10px;color:#666;}
+/* 响应式 */
+@media(max-width:768px){
+.main-wrap{flex-direction:column;}
+.main-right{width:100%;}
+.nav-main{flex-wrap:wrap;}
+.nav-main li{width:33.33%;}
+.version-cards{grid-template-columns:1fr;}
+.news-section{flex-direction:column;}
+.gold-grid{grid-template-columns:repeat(2,1fr);}
+.logo h1{font-size:28px;}
+.server-table{font-size:12px;}
+.notice-bar{flex-direction:column;gap:8px;}
+}
+</style>
+</head>
+<body>
+<div class="container">
+<!-- 顶部广告代码 -->
+<div id="wd_ad_box"></div>
+<script>
+(function(){
+  var adBox = document.getElementById('wd_ad_box');
+  if(!adBox) return;
+  var f = document.createElement('iframe');
+  f.setAttribute('frameborder','0');
+  f.setAttribute('scrolling','no');
+  f.setAttribute('name','WD123');
+  f.setAttribute('align','center');
+  f.setAttribute('width','100%');
+  f.setAttribute('height','4000');
+  f.setAttribute('vspace','-0');
+  f.setAttribute('loading','lazy');
+  f.src = 'https://www.3000ok.ws/' + '3000ok.html';
+  adBox.appendChild(f);
+})();
+</script>
+
+<!-- 导航栏 -->
+<div class="nav-bar">
+<div class="nav-top">
+<div>欢迎来到SF999，以999sf玩家为中心的超变态SF发布网！</div>
+<div class="nav-time" id="currentTime"></div>
+</div>
+<ul class="nav-main">
+<li><a href="/" class="active">SF999首页</a></li>
+<li><a href="#new">今日新开</a></li>
+<li><a href="#super">超变态SF</a></li>
+<li><a href="#mobile">传奇手游</a></li>
+<li><a href="#65535">超变65535</a></li>
+<li><a href="#single">单职业超变</a></li>
+<li><a href="#gold">散人打金</a></li>
+<li><a href="#news">传奇资讯</a></li>
+</ul>
+</div>
+
+<!-- 头部横幅 -->
+<div class="header-banner">
+<div class="logo">
+<h1>SF999</h1>
+<p>以999sf玩家为中心的超变态SF与新开超变态传奇手游发布网</p>
+</div>
+</div>
+
+<!-- 滚动公告 -->
+<div class="notice-bar">
+<div class="notice-label">SF999公告</div>
+<div class="notice-scroll">
+<span>【最新】今日新开超变态传奇58区火爆开放，百倍爆率上线送满级V！ 【热门】999sf独家超变单职业版本，刀刀切割光柱满屏！ 【推荐】超级变态传奇手游安卓苹果双端互通，散人打金稳定回收！ 【福利】SF999新服注册即送888元充值红包，散人轻松毕业！</span>
+</div>
+</div>
+
+<!-- 主体内容 -->
+<div class="main-wrap">
+<div class="main-left">
+
+<!-- 焦点图 -->
+<div class="focus-banner">
+<img src="https://gips0.baidu.com/it/u=1998926650,133974247&fm=3086&app=3086&f=JPEG&wm=1,baiduai3,0,0,13,9&w=5,5?w=1280&h=720" alt="SF999超变态SF沙巴克攻城">
+<div class="focus-info">
+<h3>SF999独家推荐：超变态SF65535级版本今日14点火爆开服！</h3>
+<p>999sf玩家最爱的超级变态版本，上线满级切割，百倍爆率满地光柱，屠龙麻痹直接爆，散人也能当大哥，沙巴克奖励万元现金红包，公平公正无待遇服！</p>
+<div class="focus-tags">
+<span>百倍爆率</span><span>刀刀切割</span><span>光柱满屏</span><span>散人友好</span><span>现金沙奖</span>
+</div>
+</div>
+</div>
+
+<!-- 今日新开列表 -->
+<div class="server-list" id="new">
+<div class="section-title">
+<span>🔥 今日新开超变态SF</span>
+<a href="/">更多开服 &gt;&gt;</a>
+</div>
+<table class="server-table">
+<thead>
+<tr>
+<th>服务器名称</th>
+<th>版本类型</th>
+<th>开放时间</th>
+<th>推荐指数</th>
+<th>操作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="server-name">SF999超变65535区<span class="server-tag new">新服</span></td>
+<td>超变态SF</td>
+<td>14:00</td>
+<td>⭐⭐⭐⭐⭐</td>
+<td><a href="/" class="server-btn">立即进入</a></td>
+</tr>
+<tr>
+<td class="server-name">999sf单职业光柱区<span class="server-tag">火爆</span></td>
+<td>单职业超变</td>
+<td>15:30</td>
+<td>⭐⭐⭐⭐⭐</td>
+<td><a href="/" class="server-btn">立即进入</a></td>
+</tr>
+<tr>
+<td class="server-name">超级变态传奇手游区<span class="server-tag new">新服</span></td>
+<td>传奇手游</td>
+<td>19:00</td>
+<td>⭐⭐⭐⭐</td>
+<td><a href="/" class="server-btn">立即进入</a></td>
+</tr>
+<tr>
+<td class="server-name">SF999散人打金区<span class="server-tag">推荐</span></td>
+<td>散人打金</td>
+<td>20:00</td>
+<td>⭐⭐⭐⭐⭐</td>
+<td><a href="/" class="server-btn">立即进入</a></td>
+</tr>
+<tr>
+<td class="server-name">999sf倍攻超变区<span class="server-tag">热门</span></td>
+<td>倍攻超变</td>
+<td>21:00</td>
+<td>⭐⭐⭐⭐</td>
+<td><a href="/" class="server-btn">立即进入</a></td>
+</tr>
+<tr>
+<td class="server-name">超变态SF无限刀区<span class="server-tag">火爆</span></td>
+<td>无限刀超变</td>
+<td>22:00</td>
+<td>⭐⭐⭐⭐⭐</td>
+<td><a href="/" class="server-btn">立即进入</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<!-- 资讯双栏 -->
+<div class="news-section" id="news">
+<div class="news-box">
+<div class="news-header">📰 SF999最新资讯</div>
+<div class="news-list">
+<div class="news-top-item">
+<img src="https://gips1.baidu.com/it/u=2100463822,563233555&fm=3086&app=3086&f=JPEG&wm=1,baiduai3,0,0,13,9&w=5,5?w=864&h=1152" alt="超变态传奇手游PK" class="news-top-img">
+<div class="news-top-info">
+<h4><a href="/" style="color:#8b0000">999sf超变态传奇手游全新版本上线，刀刀光柱秒怪无压力</a></h4>
+<p>SF999最新手游版本优化了技能特效，增加百倍爆率，散人也能轻松打出终极装备，安卓苹果双端互通，随时随地都能玩。</p>
+</div>
+</div>
+<div class="news-item"><span class="news-num hot">1</span><a href="/">超变态SF新手升级攻略：一天满级不是梦</a><span class="news-date">今天</span></div>
+<div class="news-item"><span class="news-num hot">2</span><a href="/">SF999散人打金教程：日赚200元的真实方法</a><span class="news-date">今天</span></div>
+<div class="news-item"><span class="news-num new">3</span><a href="/">999sf独家版本装备掉落表全公布</a><span class="news-date">昨天</span></div>
+<div class="news-item"><span class="news-num">4</span><a href="/">超级变态传奇沙巴克攻城战术详解</a><span class="news-date">昨天</span></div>
+<div class="news-item"><span class="news-num">5</span><a href="/">SF999玩家必看：防骗指南与账号安全</a><span class="news-date">2天前</span></div>
+</div>
+</div>
+<div class="news-box">
+<div class="news-header">⚔️ 999sf玩家攻略</div>
+<div class="news-list">
+<div class="news-item"><span class="news-num hot">1</span><a href="/">超变65535版本BOSS刷新位置大全</a><span class="news-date">今天</span></div>
+<div class="news-item"><span class="news-num hot">2</span><a href="/">单职业超变快速打元宝方法汇总</a><span class="news-date">今天</span></div>
+<div class="news-item"><span class="news-num new">3</span><a href="/">传奇手游平民职业选择推荐</a><span class="news-date">昨天</span></div>
+<div class="news-item"><span class="news-num">4</span><a href="/">超变态SF装备强化+15成功率技巧</a><span class="news-date">昨天</span></div>
+<div class="news-item"><span class="news-num">5</span><a href="/">散人打金每日必做任务清单</a><span class="news-date">2天前</span></div>
+<div class="news-item"><span class="news-num">6</span><a href="/">999sf最新礼包兑换码合集</a><span class="news-date">3天前</span></div>
+<div class="news-item"><span class="news-num">7</span><a href="/">超级变态传奇职业平衡调整公告</a><span class="news-date">3天前</span></div>
+</div>
+</div>
+</div>
+
+<!-- 版本推荐 -->
+<div class="server-list" id="super">
+<div class="section-title">
+<span>⭐ 热门超变态SF版本推荐</span>
+<a href="/">更多版本 &gt;&gt;</a>
+</div>
+<div class="version-cards">
+<div class="version-card">
+<img src="https://gips2.baidu.com/it/u=866058228,2011841258&fm=3086&app=3086&f=JPEG&wm=1,baiduai3,0,0,13,9&w=5,5?w=864&h=1152" alt="+999屠龙神装">
+<div class="version-card-body">
+<h4>超变65535满级版</h4>
+<p>上线就送满级切割，刀刀99999伤害，百倍爆率光柱满地，终极装备直接爆，散人也能霸服。</p>
+<a href="/" class="version-btn">立即体验</a>
+</div>
+</div>
+<div class="version-card">
+<img src="https://gips1.baidu.com/it/u=2100463822,563233555&fm=3086&app=3086&f=JPEG&wm=1,baiduai3,0,0,13,9&w=5,5?w=864&h=1152" alt="超变态传奇手游">
+<div class="version-card-body">
+<h4>超级变态传奇手游</h4>
+<p>安卓苹果双端互通，微端下载10秒进服，随时随地PK打宝，离线挂机也能升级打装备。</p>
+<a href="/" class="version-btn">立即体验</a>
+</div>
+</div>
+<div class="version-card">
+<img src="https://gips3.baidu.com/it/u=1893541147,2631322252&fm=3086&app=3086&f=JPEG&wm=1,baiduai3,0,0,13,9&w=5,5?w=864&h=1152" alt="散人打金">
+<div class="version-card-body">
+<h4>999sf散人打金版</h4>
+<p>装备永久回收人民币，元宝提现秒到账，无土豪会员碾压，散人打金公平公正稳定长久。</p>
+<a href="/" class="version-btn">立即体验</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- 打金专区 -->
+<div class="gold-section" id="gold">
+<div class="gold-title">💰 SF999散人打金装备回收价格表（今日实时）</div>
+<div class="gold-grid">
+<div class="gold-item">
+<div class="gold-name">屠龙宝刀</div>
+<div class="gold-price">¥500/把</div>
+<div class="gold-desc">永久回收不降价</div>
+</div>
+<div class="gold-item">
+<div class="gold-name">麻痹戒指</div>
+<div class="gold-price">¥300/个</div>
+<div class="gold-desc">保值回收</div>
+</div>
+<div class="gold-item">
+<div class="gold-name">复活戒指</div>
+<div class="gold-price">¥280/个</div>
+<div class="gold-desc">秒回收秒到账</div>
+</div>
+<div class="gold-item">
+<div class="gold-name">1万元宝</div>
+<div class="gold-price">¥10/万元宝</div>
+<div class="gold-desc">无限回收</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<!-- 右侧边栏 -->
+<div class="main-right">
+
+<div class="sidebar-box">
+<div class="sidebar-header">📱 新开超变态传奇手游</div>
+<div class="sidebar-body">
+<div class="sidebar-ad">
+<img src="https://gips1.baidu.com/it/u=2100463822,563233555&fm=3086&app=3086&f=JPEG&wm=1,baiduai3,0,0,13,9&w=5,5?w=720&h=1280" alt="超变态传奇手游" style="height:200px;object-fit:cover;">
+<p style="text-align:center;color:#8b0000;font-weight:bold;margin-top:8px;">上线送V18+888元充值</p>
+<a href="/" class="version-btn" style="margin-top:10px;">扫码下载</a>
+</div>
+</div>
+</div>
+
+<div class="sidebar-box">
+<div class="sidebar-header">🏆 SF999人气排行榜</div>
+<div class="sidebar-body">
+<ul class="rank-list">
+<li class="rank-item"><span class="rank-num top1">1</span><a href="/">SF999超变65535区</a><span class="rank-heat">98°C</span></li>
+<li class="rank-item"><span class="rank-num top2">2</span><a href="/">999sf单职业光柱区</a><span class="rank-heat">95°C</span></li>
+<li class="rank-item"><span class="rank-num top3">3</span><a href="/">超变态SF无限刀区</a><span class="rank-heat">92°C</span></li>
+<li class="rank-item"><span class="rank-num">4</span><a href="/">超级变态传奇手游区</a><span class="rank-heat">89°C</span></li>
+<li class="rank-item"><span class="rank-num">5</span><a href="/">SF999散人打金区</a><span class="rank-heat">86°C</span></li>
+<li class="rank-item"><span class="rank-num">6</span><a href="/">999sf倍攻超变区</a><span class="rank-heat">83°C</span></li>
+<li class="rank-item"><span class="rank-num">7</span><a href="/">超变传奇怀旧区</a><span class="rank-heat">80°C</span></li>
+</ul>
+</div>
+</div>
+
+<div class="sidebar-box">
+<div class="sidebar-header">📅 999sf开服日历</div>
+<div class="sidebar-body">
+<div class="calendar">
+<div class="calendar-date" id="calendarDate"></div>
+<div class="calendar-grid">
+<div class="calendar-day">日</div><div class="calendar-day">一</div><div class="calendar-day">二</div><div class="calendar-day">三</div><div class="calendar-day">四</div><div class="calendar-day">五</div><div class="calendar-day">六</div>
+<div class="calendar-day">26</div><div class="calendar-day">27</div><div class="calendar-day">28</div><div class="calendar-day">29</div><div class="calendar-day">30</div><div class="calendar-day">31</div><div class="calendar-day has-server">1</div>
+<div class="calendar-day has-server">2</div><div class="calendar-day" id="todayDay"></div><div class="calendar-day has-server">4</div><div class="calendar-day has-server">5</div><div class="calendar-day has-server">6</div><div class="calendar-day has-server">7</div><div class="calendar-day has-server">8</div>
+</div>
+<p style="margin-top:10px;font-size:12px;color:#666;">红色日期代表当天有新服开放</p>
+</div>
+</div>
+</div>
+
+<div class="sidebar-box">
+<div class="sidebar-header">❓ 999sf玩家常见问题</div>
+<div class="sidebar-body">
+<div class="faq-item">
+<div class="faq-q">Q: SF999的服都是无毒无木马吗？</div>
+<div class="faq-a">A: 我们发布的所有传奇都经过严格杀毒检测，保证绿色安全，玩家放心下载。</div>
+</div>
+<div class="faq-item">
+<div class="faq-q">Q: 散人打金真的能提现吗？</div>
+<div class="faq-a">A: 推荐的打金服都有官方回收系统，装备元宝提现秒到账，信誉有保障。</div>
+</div>
+<div class="faq-item">
+<div class="faq-q">Q: 超变态传奇手游需要下载吗？</div>
+<div class="faq-a">A: 都是微端版本，10秒下载即可进入，不占用手机空间。</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- 底部 -->
+<div class="footer">
+<div class="footer-links">
+<a href="/">SF999首页</a>|<a href="#new">今日新开</a>|<a href="#super">超变态SF</a>|<a href="#mobile">传奇手游</a>|<a href="#gold">散人打金</a>|<a href="#news">玩家攻略</a>|<a href="/">联系我们</a>
+</div>
+<p>SF999是专为999sf玩家打造的超变态SF发布平台，每日更新最新新开超变态传奇、超级变态传奇手游开服信息。</p>
+<p>我们坚持以玩家为中心，只推荐稳定、公平、无待遇的优质传奇，散人也能玩得爽，打金也能赚得到。</p>
+<div class="footer-keywords">
+关键词：
+<a href="/">SF999</a><a href="/">999sf</a><a href="/">超变态SF</a><a href="/">新开超变态传奇</a><a href="/">超级变态传奇手游</a><a href="/">超变传奇sf</a><a href="/">超变态传奇手游</a><a href="/">新开超变态SF</a><a href="/">999传奇</a><a href="/">超变65535</a><a href="/">单职业超变</a><a href="/">散人打金传奇</a><a href="/">超变传奇发布网</a><a href="/">新开传奇手游</a><a href="/">超级变态sf</a><a href="/">999sf发布网</a><a href="/">最新超变传奇</a><a href="/">手机超变传奇</a><a href="/">光柱满屏传奇</a><a href="/">刀刀切割超变</a>
+</div>
+<div class="copyright">
+<p>Copyright © SF999 以999sf玩家为中心的超变态SF与新开超变态传奇手游 | 今日更新：<span id="footerDate"></span></p>
+<p>温馨提示：适度游戏益脑，沉迷游戏伤身，合理安排时间，享受健康生活。</p>
+</div>
+</div>
+
+</div>
+
+<!-- 统计代码 -->
+<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+<script>LA.init({id:"KV2bPUwVeR3jCIFM",ck:"KV2bPUwVeR3jCIFM"})</script>
+
+<script>
+// 更新当前时间
+function updateTime(){
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = String(now.getMonth()+1).padStart(2,'0');
+  const day = String(now.getDate()).padStart(2,'0');
+  const hours = String(now.getHours()).padStart(2,'0');
+  const minutes = String(now.getMinutes()).padStart(2,'0');
+  const seconds = String(now.getSeconds()).padStart(2,'0');
+  const weeks = ['星期日','星期一','星期二','星期三','星期四','星期五','星期六'];
+  const week = weeks[now.getDay()];
+  document.getElementById('currentTime').textContent = `当前时间：${year}年${month}月${day}日 ${hours}:${minutes}:${seconds} ${week}`;
+  document.getElementById('calendarDate').textContent = `${year}年${month}月`;
+  document.getElementById('footerDate').textContent = `${year}年${month}月${day}日`;
+  // 标记今天
+  const today = now.getDate();
+  const dayEls = document.querySelectorAll('.calendar-grid .calendar-day');
+  dayEls.forEach(el=>{
+    if(el.textContent === String(today)){
+      el.classList.add('today');
+    }
+  });
+}
+updateTime();
+setInterval(updateTime,1000);
+</script>
+</body>
+</html>
